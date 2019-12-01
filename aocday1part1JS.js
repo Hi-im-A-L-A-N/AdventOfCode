@@ -13,4 +13,4 @@ function fuelArraySum(){
     return fuelSum;
 }
 
-console.log(fuelArraySum())
+fuelArraySum()

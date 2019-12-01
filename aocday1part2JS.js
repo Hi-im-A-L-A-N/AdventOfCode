@@ -14,7 +14,7 @@ function fuelCalc(fuel){
         if (fuel2 > 0){
             totalFuel += fuel2;
         }
-        console.log(fuel2)
+        fuel2
         currentFuel = fuel2;
     }
     return totalFuel;
@@ -22,12 +22,12 @@ function fuelCalc(fuel){
 
 function fuelArraySum(){
     var fuelSum = 0;
-    for (index = 0; index < massArray.length; index++){
-        fuelSum += fuelCalc(massArray[index]);
+    for (var value of massArray){
+        fuelSum += fuelCalc(value);
     }
     return fuelSum;
 }
 
 
 
-fuelArraySum()
+console.log(fuelArraySum())
