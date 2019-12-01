@@ -1,4 +1,5 @@
-var massArray = []
+var fs = require('fs');
+var massArray = fs.readFileSync('day1input.txt', 'utf8').split("\n").map(Number);
 
 function fuelReq(mass){
     return Math.floor(mass / 3) - 2;
