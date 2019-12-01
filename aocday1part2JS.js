@@ -1,4 +1,4 @@
-var massArray = [74767, 108567, 135114]
+var massArray = []
 
 function fuelReq(mass){
     return Math.floor(mass / 3) - 2;
@@ -29,4 +29,4 @@ function fuelArraySum(){
 
 
 
-console.log(fuelArraySum())
+fuelArraySum()
