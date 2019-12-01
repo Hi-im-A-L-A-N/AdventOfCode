@@ -14,7 +14,6 @@ function fuelCalc(fuel){
         if (fuel2 > 0){
             totalFuel += fuel2;
         }
-        fuel2
         currentFuel = fuel2;
     }
     return totalFuel;
