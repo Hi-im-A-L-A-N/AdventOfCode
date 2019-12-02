@@ -1,16 +1,16 @@
-var fs = require('fs');
-var massArray = fs.readFileSync('day1input.txt', 'utf8').split("\n").map(Number);
+const fs = require('fs');
+const massArray = fs.readFileSync('day1input.txt', 'utf8').split("\n").map(Number);
 
 function fuelReq(mass){
     return Math.floor(mass / 3) - 2;
 }
 
 function fuelCalc(fuel){
-    var totalFuel = 0;
-    var currentFuel = fuel;
+    let totalFuel = 0;
+    let currentFuel = fuel;
 
     while (currentFuel > 0){
-        var fuel2 = fuelReq(currentFuel);
+        let fuel2 = fuelReq(currentFuel);
         if (fuel2 > 0){
             totalFuel += fuel2;
         }
@@ -20,7 +20,7 @@ function fuelCalc(fuel){
 }
 
 function fuelArraySum(){
-    var fuelSum = 0;
+    let fuelSum = 0;
     for (var value of massArray){
         fuelSum += fuelCalc(value);
     }
